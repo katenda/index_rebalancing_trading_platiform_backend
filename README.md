@@ -10,36 +10,32 @@
 A Django REST API backend for algorithmic stock trading strategies focused on mid-term index reconstitution events. This application provides machine learning-based trading signals, price predictions, and stock screening capabilities designed for US equity markets.
 
 **Public Repository:** [Algo-Stock-Trading](https://github.com/Jamuna-KC/Algo-Stock-Trading)
+## 🏗️ Project Architecture
 
----
+| Directory | Purpose |
+|-----------|---------|
+| **📁 Root Level** | |
+| `manage.py` | Django CLI utility |
+| `requirements.txt` | Python dependencies |
+| **📐 architecture/** | Documentation |
+| `├─ api_structure.md` | API endpoints & specs |
+| `└─ system_design.md` | Architecture diagrams |
+| **⚙️ trading_api/** | Django configuration |
+| `├─ settings.py` | Core settings |
+| `├─ urls.py` | Root URL routing |
+| `└─ wsgi.py` | Production server config |
+| **🧠 strategies/** | Main application |
+| `├─ views.py` | API endpoint handlers |
+| `├─ serializers.py` | Request/response validation |
+| `└─ urls.py` | App URL routing |
+| **🤖 strategies/ml_models/** | Machine learning |
+| `├─ pivot_strategy.py` | Pivot point trading |
+| `├─ price_prediction.py` | Next-day predictions |
+| `├─ stock_screener.py` | Stock filtering |
+| `└─ saved/` | Trained model storage |
+| **📊 strategies/data/** | Data files |
+| `└─ *.csv` | Historical & screening data |
 
-## 🏗️ Architecture
-
-trading_api/
-├── manage.py
-├── README.md
-├── requirements.txt
-├── architecture/
-│ ├── api_structure.md
-│ └── system_design.md
-├── trading_api/
-│ ├── settings.py
-│ ├── urls.py
-│ └── wsgi.py
-└── strategies/
-├── model
-.py ├──
-iews.py ├── se
-ializers.py
-├── urls.p
-├── ml_models/ │
-├── pivot_strategy.py
-│ ├── price_prediction.
-y │ ├──
-tock_screener.py │ └──
-saved/
-
----
 
 ## 📚 Reference Notebooks
 
